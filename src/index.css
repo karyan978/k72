@@ -16,3 +16,22 @@ body{
   background-color: #111;
   color: #ebe9e9;
 }
+.movelink {
+ opacity: 0;
+ transition: all ease 0.3s;
+}
+.movelink:hover {
+  opacity: 1;
+}
+.movex{
+  animation-name: moveAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes moveAnimation{
+  from {trnsform: translateX(0);
+  }
+  to {transform: translateX(-100%);
+  }
+}
